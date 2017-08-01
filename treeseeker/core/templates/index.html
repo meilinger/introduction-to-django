@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    {% for species in object_list %}
+      {{ species }} - {{ species.treesample_set.count }}<br/>
+    {% empty %}
+      No species!
+    {% endfor %}
+  </body>
+</html>
